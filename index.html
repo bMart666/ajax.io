@@ -30,7 +30,7 @@
 
       mRequest.onreadystatechange = function() {
         if(mRequest.readyState == 4 && mRequest.status == 200) {
-          var nameObj = this.reponseText;
+          var nameObj = this.responseText;
           console.log(nameObj);
           nameObj = JSON.parse(nameObj);
           console.log(nameObj.lastName);
